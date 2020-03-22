@@ -1,6 +1,7 @@
 :root {
   --main-text: #18191B;
   --main-accent: #0E65F3;
+  --max-width: 1256px;
 }
 
 * {
@@ -10,20 +11,21 @@
 html,
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   background: #fff;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 1256px;
+  width: var(--max-width);
   margin: auto;
 }
 
 .hero {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
+  color: var(--main-text);
 }
 
 .top-bar {
@@ -46,7 +48,7 @@ body {
   height: 6px;
   background: var(--main-accent);
   right: -7px;
-  bottom: 5px;
+  bottom: 9px;
 }
 
 .menu {
@@ -54,7 +56,7 @@ body {
   /* background: #ddd; */
   display: flex;
   align-items: center;
-  width: 1256px;
+  width: var(--max-width);
   margin: auto;
 }
 
@@ -65,6 +67,9 @@ body {
 
 .menu__item {
   display: inline-block;
+}
+
+.menu__item--main-menu-m {
   margin-right: 115px;
 }
 
@@ -128,4 +133,122 @@ body {
   transform: rotate(45deg);
   bottom: -2px;
   right: -4px;
+}
+
+.hero__body {
+  background: url('./images/woman-adjusting-her-virtual-reality-headset-3761262.jpg') no-repeat right bottom;
+  height: 950px;
+  margin-right: 50px;
+}
+
+.hero__container {
+  padding-top: 50px;
+  display: flex;
+  height: 85%;
+}
+
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-aside__img {
+  display: block;
+  position: relative;
+  left: -50px;
+}
+
+.socials {
+  transform: rotate(-90deg);
+  position: relative;
+  left: -60px;
+  bottom: 90px;
+}
+
+.socials__item {
+  margin-right: 20px;
+}
+
+.socials__link {
+  font-size: .8rem;  
+}
+
+.hero-text {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  margin-left: 90px;
+}
+
+.hero-text__subtitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+  position: relative;
+}
+
+.hero-text__subtitle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  background: var(--main-accent);
+  right: 50%;
+  bottom: 4px;
+  font-weight: 600;
+}
+
+.hero-text__title {
+  font-size: 6.2rem;
+  line-height: 112px;
+  margin: 22px 0 20px;
+}
+
+.hero-text__caption {
+  font-size: 1.1rem; 
+  width: 310px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 67px;
+  margin: 39px 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn-purchase__img {
+  margin-left: 11px;
+}
+
+.scroll-down {
+  display: flex;
+}
+
+.scroll-down__img {
+  display: block;
+  width: 11px;
+  height: 15px;
+  margin: 1px 16px 0 0;
+}
+
+.scroll-down__title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.scroll-down__caption {
+  font-size: 0.8rem;
+  color: #8a8b8c;
+  margin: 5px 0 0 0;
+
 }

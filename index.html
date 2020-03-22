@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,66 @@
   <link rel="stylesheet" href="style.css">
   <title>Mimini - Practice page #1</title>
 </head>
+
 <body>
   <header class="hero">
     <div class="top-bar">
-      <h1 class="top-bar__logo">Mimini</h1>
+      <h2 class="top-bar__logo">Mimini</h2>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-          <li class="menu__item"><a href="#video" class="menu__link">Introduction</a></li>
-          <li class="menu__item"><a href="#features" class="menu__link">Features</a></li>
-          <li class="menu__item"><a href="#testimonials" class="menu__link">Reviews</a></li>
-          <li class="menu__item"><a href="#compatible" class="menu__link">Products</a></li>
-          <li class="menu__item"><a href="#showcase" class="menu__link">Gallery</a></li>
+          <li class="menu__item menu__item--main-menu-m">
+          <a href="#" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item menu__item--main-menu-m">
+            <a href="#video" class="menu__link">Introduction</a>
+          </li>
+          <li class="menu__item menu__item--main-menu-m">
+            <a href="#features" class="menu__link">Features</a>
+          </li>
+          <li class="menu__item menu__item--main-menu-m">
+            <a href="#testimonials" class="menu__link">Reviews</a>
+          </li>
+          <li class="menu__item menu__item--main-menu-m">
+            <a href="#compatible" class="menu__link">Products</a>
+          </li>
+          <li class="menu__item menu__item--main-menu-m">
+            <a href="#showcase" class="menu__link">Gallery</a>
+          </li>
         </ul>
       </nav>
       <aside class="aside-menu">
         <div class="hamburger"></div>
         <div class="search"></div>
       </aside>
+    </div>
+    <div class="hero__body">
+      <div class="hero__container">
+        <div class="hero-aside">
+          <img src="https://unsplash.it/204/360/" alt="" class="hero-aside__img">
+          <nav class="socials">
+            <ul class="socials__list menu__list">
+              <li class="socials__item menu__item"><a href="#" class="socials__link menu__link">Facebook</a></li>
+              <li class="socials__item menu__item"><a href="#" class="socials__link menu__link">Twitter</a></li>
+              <li class="socials__item menu__item"><a href="#" class="socials__link menu__link">Instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero-text">
+          <div>
+            <h2 class="hero-text__subtitle">Mimini VR Next Gen</h2>
+            <h1 class="hero-text__title">Live the Life You Want.</h1>
+            <p class="hero-text__caption">It's easy to get lost in the world of virtual reality because the Mi VR is engineered to feel lighter.</p>
+            <button class="btn btn-purchase">Purchase Now <img class="btn-purchase__img" src="./images/bag-edit.svg" alt=""></button>
+          </div>
+          <div class="scroll-down">
+            <img class="scroll-down__img" src="./images/Mouse Line.png" alt="">
+            <div>
+              <h3 class="scroll-down__title">Discover Mimini VR</h3>
+              <p class="scroll-down__caption">Scroll down</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <section id="video" class="video"></section>
@@ -43,4 +86,5 @@
   <section id="call-to-action" class="call-to-action"></section>
   <section class="footer"></section>
 </body>
+
 </html>
